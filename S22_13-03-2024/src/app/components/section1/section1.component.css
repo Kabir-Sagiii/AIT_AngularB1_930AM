@@ -1,0 +1,15 @@
+#section1Container {
+  margin: 70px 0px;
+}
+#section1Container table {
+  width: 100%;
+}
+#leftColumn {
+  width: 40%;
+}
+#rightColumn {
+  width: 60%;
+}
+#leftColumn img {
+  border-radius: 50%;
+}
