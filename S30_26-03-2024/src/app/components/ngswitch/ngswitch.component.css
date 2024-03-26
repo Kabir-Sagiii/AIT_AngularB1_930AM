@@ -1,0 +1,13 @@
+.ngswitch {
+  padding: 50px;
+}
+.ngswitch h2 {
+  margin: 20px 0px;
+}
+.switchcontainer {
+  padding: 100px;
+  background-color: rgb(141, 14, 14);
+  color: white;
+  box-shadow: 0 0 10px black;
+  margin: 30px;
+}
