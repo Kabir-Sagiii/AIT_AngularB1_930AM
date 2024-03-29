@@ -1,13 +1,9 @@
 <div class="userCard">
-  <img
-    src="https://th.bing.com/th/id/OIP.NqY3rNMnx2NXYo3KJfg43gAAAA?rs=1&pid=ImgDetMain"
-    width="100%"
-    height="200"
-  />
-  <h3>Chris Ayan</h3>
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora recusandae
-    aut exercitationem voluptatum, neque labore quam velit quos saepe cum.
+  <img [src]="userData.picture.medium" width="100%" height="200" />
+  <h4>{{ userData.name.first }} {{ userData.name.last }}</h4>
+  <p [ngStyle]="{ color: userData.gender === 'male' ? 'green' : 'red' }">
+    {{ userData.gender }}
   </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
   <button class="btn btn-outline-primary">Profile</button>
 </div>

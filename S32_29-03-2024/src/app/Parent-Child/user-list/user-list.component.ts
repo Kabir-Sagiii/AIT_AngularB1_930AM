@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class UserListComponent {
   users:any = []
+//   showRadio:boolean = false
 getUsers(){
-   fetch("https://randomuser.me/api/?results=51")
+   fetch("https://randomuser.me/api/?results=100")
    .then((res)=>res.json())
    .then((data)=>{
+      // this.showRadio = true
 this.users = data.results
    }).catch((error)=>{
 alert("Something Went Wrong")

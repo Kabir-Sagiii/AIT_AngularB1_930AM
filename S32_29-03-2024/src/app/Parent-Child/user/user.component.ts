@@ -6,8 +6,8 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent {
-  @Input()
-  userData:any = {
-    
-  }
+ @Input()
+  user:any 
+
+  genderColor:string='red'
 }
