@@ -1,0 +1,32 @@
+<div style="padding: 50px">
+  <h2>ngFor Directive</h2>
+  <br />
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+    laboriosam quo nulla nemo quisquam id quos iusto nobis culpa atque, incidunt
+    vitae saepe illo expedita alias harum at reiciendis voluptates quas,
+    architecto velit rerum ipsum animi. Molestiae totam aspernatur pariatur.
+    Harum veniam dignissimos at ipsam omnis totam tempora reprehenderit quisquam
+    architecto eos minus nihil, consequuntur, unde distinctio aut repellendus
+    cum fugit eaque similique natus voluptatem sunt debitis libero! Ab animi
+    exercitationem repellat et vitae. Magnam ab voluptas error magni explicabo?
+    Ea dolore eaque beatae dicta quaerat. Magni labore soluta dolores obcaecati!
+    Autem necessitatibus, modi vitae soluta suscipit natus repudiandae
+    consequuntur?
+  </p>
+  <br /><br />
+  <button (click)="getMaleUsers()">Male Users</button>
+  <button (click)="getFemaleUsers()">Female Users</button>
+  <br /><br />
+  <!-- <ol>
+    <li *ngFor="let name of users">{{ name }}</li>
+  </ol> -->
+  <div style="display: flex; justify-content: space-evenly">
+    <dl style="margin-bottom: 20px" *ngFor="let user of users">
+      <dt><b>User Name</b></dt>
+      <dd>{{ user.name }}</dd>
+      <dt><b>City</b></dt>
+      <dd>{{ user.city }}</dd>
+    </dl>
+  </div>
+</div>
