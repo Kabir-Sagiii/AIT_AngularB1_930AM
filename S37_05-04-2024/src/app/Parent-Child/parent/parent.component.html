@@ -1,0 +1,7 @@
+<div class="parent">
+  <h2>Parent Component</h2>
+  <input type="text" placeholder="Enter Some Text" [(ngModel)]="data" />
+  <button (click)="getData()">Send To Child</button>
+
+  <app-child [childData]="parentData"></app-child>
+</div>

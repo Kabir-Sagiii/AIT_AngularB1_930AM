@@ -1,4 +1,4 @@
-import { Component ,} from '@angular/core';
+import { Component } from '@angular/core';
 import { MyService } from '../Services/myservice.service';
 
 @Component({
@@ -13,7 +13,6 @@ export class AComponent {
   constructor(private myFirstService:MyService){
 
   }
- 
 
        getF1(){
           this.myFirstService.printCityName()

@@ -26,7 +26,8 @@ import { FilterUsersComponent } from './Parent-Child/filter-users/filter-users.c
 import { AComponent } from './Services-Concept/a/a.component';
 import { BComponent } from './Services-Concept/b/b.component';
 import { MyService } from './Services-Concept/Services/myservice.service';
-
+import { NewUserComponent } from './Services-Concept/new-user/new-user.component';
+import { UserDetailsComponent } from './Services-Concept/user-details/user-details.component';
 
 
 
@@ -57,6 +58,8 @@ import { MyService } from './Services-Concept/Services/myservice.service';
     MainComponent,
     AComponent,
     BComponent,
+    NewUserComponent,
+    UserDetailsComponent,
    
    
   ],
@@ -65,7 +68,8 @@ import { MyService } from './Services-Concept/Services/myservice.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [MyService],
+  // providers: [MyService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
