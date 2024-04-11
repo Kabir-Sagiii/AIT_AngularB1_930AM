@@ -1,7 +1,0 @@
-.childrens {
-  width: 1000px;
-  margin: 30px auto;
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  gap: 20px;
-}

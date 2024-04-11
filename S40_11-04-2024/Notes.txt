@@ -1,9 +1,0 @@
-https://kabir-sagi.github.io/PortfolioWebsite/
-
-Random Users api
-------------------
-https://randomuser.me/api/?results=30
-
-https://637792c6211464053ad10d42--rococo-biscotti-b351a9.netlify.app/
-
-https://kabir-sagiii.github.io/BusinessCard/HorizontalCard.html
