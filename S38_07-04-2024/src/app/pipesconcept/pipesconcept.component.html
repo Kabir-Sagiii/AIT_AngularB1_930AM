@@ -1,0 +1,28 @@
+<!-- <div class="p-5">
+  <h2>Users Name</h2>
+  <h3>{{ "ram prasad" | mypipe : "a" : "b" }}</h3>
+  <ol>
+    <li *ngFor="let user of users">{{ user | lowercase | slice : 1 : 3 }}</li>
+  </ol>
+  <h2>Product Price</h2>
+  <ol>
+    <li *ngFor="let pp of productsPrice">{{ pp | currency : "EUR" }}</li>
+  </ol>
+  <h2>Users DOB</h2>
+  <ol>
+    <li *ngFor="let date of usersDob">{{ date | date : "fullDate" }}</li>
+  </ol>
+</div> -->
+
+<div class="p-5">
+  <table class="table w-25 m-auto">
+    <tr>
+      <th>NAME</th>
+      <th>GENDER</th>
+    </tr>
+    <tr *ngFor="let user of users | mypipe : 'male'">
+      <td>{{ user.name }}</td>
+      <td>{{ user.gender }}</td>
+    </tr>
+  </table>
+</div>

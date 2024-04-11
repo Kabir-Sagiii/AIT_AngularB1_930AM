@@ -1,0 +1,15 @@
+<div style="margin-top: 30px; margin-bottom: 30px; text-align: center">
+  <input
+    type="radio"
+    name="gender"
+    checked
+    (change)="selectedUserType('all')"
+  />All ({{ totalUsersCount }}) &nbsp;&nbsp;&nbsp;
+  <input type="radio" name="gender" (change)="selectedUserType('male')" />Male
+  ({{ maleUsersCount }}) &nbsp;&nbsp;&nbsp;
+  <input
+    type="radio"
+    name="gender"
+    (change)="selectedUserType('female')"
+  />Female ({{ femaleUsersCount }})
+</div>

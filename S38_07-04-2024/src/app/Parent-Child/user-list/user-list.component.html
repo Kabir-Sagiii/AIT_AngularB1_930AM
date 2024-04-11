@@ -1,0 +1,30 @@
+<div class="mt-5 p-5">
+  <h2>User List</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid corrupti
+    deserunt sit exercitationem quibusdam rerum, culpa, repellat provident ipsa
+    consequuntur voluptas laudantium animi aspernatur distinctio, dignissimos
+    nostrum beatae ducimus voluptate at sed corporis commodi cum. Facilis odio
+    molestiae, vel corporis libero impedit. Minima possimus debitis, temporibus
+    ducimus quaerat commodi odit repellendus ratione provident similique aliquid
+    officia placeat amet sed suscipit cumque dolorem adipisci deserunt. Ea
+    commodi maxime reprehenderit? Minus provident corporis aspernatur cum
+    accusamus inventore consectetur numquam porro, aliquam, id recusandae
+    excepturi voluptate omnis fugiat aut quidem sed facere nulla dicta velit
+    eveniet! Iure distinctio illum dolor repellendus, consequatur aliquam?
+  </p>
+  <button class="btn btn-outline-primary" (click)="getUsers()">
+    Get Users
+  </button>
+
+  <app-filter-users
+    [maleUsersCount]="maleUsersCount"
+    [femaleUsersCount]="femaleUserCount"
+    [totalUsersCount]="totalNoOfUsersCount"
+    (radioSelectedEvent)="selectedGenderType($event)"
+  ></app-filter-users>
+
+  <div class="childrens">
+    <app-user *ngFor="let user of users" [user]="user"></app-user>
+  </div>
+</div>

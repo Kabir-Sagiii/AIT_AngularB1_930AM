@@ -1,0 +1,101 @@
+<div class="ngswitch">
+  <div style="text-align: center">
+    <h2 class="text-primary">ng Switch Directive</h2>
+    <select class="form-select" (change)="changeTech($event)">
+      <option>Select the Technology</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">Javascript</option>
+      <option value="angular">Angular</option>
+    </select>
+  </div>
+
+  <div class="mainContainer" [ngSwitch]="containerValue">
+    <div
+      *ngSwitchCase="'html'"
+      class="switchcontainer"
+      style="background-color: lightgreen"
+    >
+      <h2>HTML</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat
+        ipsam voluptates, asperiores facere excepturi et illo accusamus pariatur
+        nihil quasi tempora aut numquam quis totam corrupti ad ratione
+        voluptatum laboriosam dicta debitis suscipit. Cupiditate praesentium
+        consequuntur quo amet rem fugiat deserunt quisquam obcaecati maiores,
+        possimus, repudiandae qui laboriosam sequi. Porro illo impedit facere
+        repellat, voluptatem dolore dolorum nulla deleniti fuga voluptatum odio
+        unde sit libero temporibus ea eum. Molestias sint vero, ducimus eos
+        facere blanditiis exercitationem autem? Exercitationem recusandae
+        dolores consectetur error hic vero consequatur enim, voluptatibus nam
+        assumenda maxime ab? Incidunt, recusandae ullam officia non placeat
+        doloremque tenetur!
+      </p>
+    </div>
+    <div
+      *ngSwitchCase="'css'"
+      class="switchcontainer"
+      style="background-color: rgb(90, 32, 178)"
+    >
+      <h2>CSS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat
+        ipsam voluptates, asperiores facere excepturi et illo accusamus pariatur
+        nihil quasi tempora aut numquam quis totam corrupti ad ratione
+        voluptatum laboriosam dicta debitis suscipit. Cupiditate praesentium
+        consequuntur quo amet rem fugiat deserunt quisquam obcaecati maiores,
+        possimus, repudiandae qui laboriosam sequi. Porro illo impedit facere
+        repellat, voluptatem dolore dolorum nulla deleniti fuga voluptatum odio
+        unde sit libero temporibus ea eum. Molestias sint vero, ducimus eos
+        facere blanditiis exercitationem autem? Exercitationem recusandae
+        dolores consectetur error hic vero consequatur enim, voluptatibus nam
+        assumenda maxime ab? Incidunt, recusandae ullam officia non placeat
+        doloremque tenetur!
+      </p>
+    </div>
+    <div
+      *ngSwitchCase="'js'"
+      class="switchcontainer"
+      style="background-color: rgb(27, 12, 12)"
+    >
+      <h2>Javascript</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat
+        ipsam voluptates, asperiores facere excepturi et illo accusamus pariatur
+        nihil quasi tempora aut numquam quis totam corrupti ad ratione
+        voluptatum laboriosam dicta debitis suscipit. Cupiditate praesentium
+        consequuntur quo amet rem fugiat deserunt quisquam obcaecati maiores,
+        possimus, repudiandae qui laboriosam sequi. Porro illo impedit facere
+        repellat, voluptatem dolore dolorum nulla deleniti fuga voluptatum odio
+        unde sit libero temporibus ea eum. Molestias sint vero, ducimus eos
+        facere blanditiis exercitationem autem? Exercitationem recusandae
+        dolores consectetur error hic vero consequatur enim, voluptatibus nam
+        assumenda maxime ab? Incidunt, recusandae ullam officia non placeat
+        doloremque tenetur!
+      </p>
+    </div>
+    <div class="switchcontainer" *ngSwitchCase="'angular'">
+      <h2>Angular</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat
+        ipsam voluptates, asperiores facere excepturi et illo accusamus pariatur
+        nihil quasi tempora aut numquam quis totam corrupti ad ratione
+        voluptatum laboriosam dicta debitis suscipit. Cupiditate praesentium
+        consequuntur quo amet rem fugiat deserunt quisquam obcaecati maiores,
+        possimus, repudiandae qui laboriosam sequi. Porro illo impedit facere
+        repellat, voluptatem dolore dolorum nulla deleniti fuga voluptatum odio
+        unde sit libero temporibus ea eum. Molestias sint vero, ducimus eos
+        facere blanditiis exercitationem autem? Exercitationem recusandae
+        dolores consectetur error hic vero consequatur enim, voluptatibus nam
+        assumenda maxime ab? Incidunt, recusandae ullam officia non placeat
+        doloremque tenetur!
+      </p>
+    </div>
+
+    <div *ngSwitchDefault>
+      <h1 style="color: red; text-align: center; margin-top: 100px">
+        Select Any Option from DropDown
+      </h1>
+    </div>
+  </div>
+</div>

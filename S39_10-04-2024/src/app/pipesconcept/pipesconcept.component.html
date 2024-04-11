@@ -1,0 +1,28 @@
+<!-- <div class="p-5">
+  <div class="p-3 mb-3">
+    <input
+      type="radio"
+      checked
+      name="gender"
+      (change)="changeGender('all')"
+    />All &nbsp;&nbsp;
+    <input type="radio" name="gender" (change)="changeGender('male')" />Male
+    &nbsp;&nbsp;
+    <input type="radio" name="gender" (change)="changeGender('female')" />Female
+  </div>
+  <table class="table w-25">
+    <tr>
+      <th>NAME</th>
+      <th>GENDER</th>
+    </tr>
+    <tr *ngFor="let user of users | mypipe : gender">
+      <td>{{ user.name }}</td>
+      <td>{{ user.gender }}</td>
+    </tr>
+  </table>
+
+  <button class="btn btn-outline-success" (click)="addUser()">Add User</button>
+</div> -->
+
+<h2 class="p-2 mt-5">Async Pipe</h2>
+<p class="p-2">{{ mydata | async }}</p>
