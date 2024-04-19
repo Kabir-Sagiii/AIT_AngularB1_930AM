@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ObservablesCComponent } from './components/observables-c/observables-c.component';
 import { MapfilterOCComponent } from './components/mapfilter-oc/mapfilter-oc.component';
+import { UsersdetailsComponent } from './components/HttpClient/usersdetails/usersdetails.component';
+import { NewuserComponent } from './components/HttpClient/newuser/newuser.component';
 
 
 
@@ -17,6 +19,8 @@ import { MapfilterOCComponent } from './components/mapfilter-oc/mapfilter-oc.com
     HeaderComponent,
     ObservablesCComponent,
     MapfilterOCComponent,
+    UsersdetailsComponent,
+    NewuserComponent,
    
    
    

@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "id": "102",
+      "name": "Rahul",
+      "city": "Mumbai"
+    },
+    {
+      "id": "104",
+      "name": "Sneha",
+      "city": "Hyderabad"
+    },
+    {
+      "id": "e996",
+      "name": "Raj",
+      "city": "Indore"
+    }
+  ],
+  "data": {
+    "productName": "Iphone",
+    "price": 120000
+  }
+}

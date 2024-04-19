@@ -1,0 +1,52 @@
+<div style="padding: 50px">
+  <h2>User Details</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae animi
+    dolorum vel ratione a numquam quis nesciunt expedita beatae rem eaque
+    officiis porro quam ducimus quibusdam consectetur, vitae perferendis
+    facilis? Animi sit itaque dolorum sapiente voluptatum aspernatur veritatis
+    quam nostrum libero amet aliquid optio adipisci doloribus pariatur mollitia
+    dolorem atque a delectus perferendis aut quia iusto qui quo saepe ad
+    doloribus esse sapiente consequatur non. Harum, eligendi illum!
+  </p>
+
+  <button class="btn btn-outline-success" (click)="getUsers()">
+    Get Users
+  </button>
+
+  <div class="d-flex">
+    <div class="w-50">
+      <app-newuser></app-newuser>
+    </div>
+    <div class="mt-5 w-50 mx-auto" *ngIf="usersdata.length > 0">
+      <table class="table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>CITY</th>
+            <th colspan="2">ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of usersdata">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.city }}</td>
+            <td>
+              <button class="btn btn-outline-success">Update</button>
+            </td>
+            <td>
+              <button
+                class="btn btn-outline-danger"
+                (click)="removeUser(user.id)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

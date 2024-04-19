@@ -1,0 +1,9 @@
+{
+    "results": [ {"name":"Raj"},{"name":"s2"},{"name":"s3"},{"name":"Sneha"}],
+
+    "data": {
+        "productName":"Iphone",
+        "price":120000
+    }
+}
+

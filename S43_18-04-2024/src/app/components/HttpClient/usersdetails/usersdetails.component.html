@@ -1,0 +1,31 @@
+<div style="padding: 50px">
+  <h2>User Details</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestiae animi
+    dolorum vel ratione a numquam quis nesciunt expedita beatae rem eaque
+    officiis porro quam ducimus quibusdam consectetur, vitae perferendis
+    facilis? Animi sit itaque dolorum sapiente voluptatum aspernatur veritatis
+    quam nostrum libero amet aliquid optio adipisci doloribus pariatur mollitia
+    molestias iure, nihil voluptatibus molestiae. Quisquam voluptate corporis
+    cumque accusamus reprehenderit ex nostrum iusto asperiores. Dicta a eum
+    ducimus, porro perspiciatis ipsum illum, odit assumenda obcaecati impedit
+    nihil fuga ullam mollitia totam eveniet recusandae explicabo aut voluptas
+    incidunt quos temporibus, saepe nulla. Modi voluptatibus saepe reiciendis
+    dicta aperiam deserunt, laudantium officiis itaque placeat deleniti
+    reprehenderit eaque blanditiis quis fugiat consequatur a? Consequatur quia
+    quaerat laboriosam quis architecto culpa voluptatum quibusdam sint ea
+    repellendus. Alias quis dignissimos unde, veniam vero voluptate suscipit
+    dolorem atque a delectus perferendis aut quia iusto qui quo saepe ad
+    doloribus esse sapiente consequatur non. Harum, eligendi illum!
+  </p>
+
+  <button class="btn btn-outline-success" (click)="getUsers()">
+    Get Users
+  </button>
+
+  <div>
+    <p *ngFor="let user of usersdata">
+      {{ user.name }}
+    </p>
+  </div>
+</div>
