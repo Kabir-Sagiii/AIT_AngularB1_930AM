@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "name": "Rahul Verma",
+      "city": "Mumbai",
+      "id": "102"
+    },
+    {
+      "name": "Jiya Sharma",
+      "city": "Hyderabad",
+      "id": "104"
+    },
+    {
+      "id": "e996",
+      "name": "Raj",
+      "city": "Indore"
+    },
+    {
+      "id": "184e",
+      "name": "Sneha Reddy",
+      "city": "Mumbai"
+    },
+    {
+      "name": "xyz",
+      "city": "Chennai",
+      "id": "b85f"
+    }
+  ],
+  "data": {
+    "productName": "Iphone",
+    "price": 120000
+  }
+}
