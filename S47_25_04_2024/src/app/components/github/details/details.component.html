@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span
+            [ngStyle]="{ color: 'green' }"
+            *ngIf="githubuserS.userdetails.name != null"
+            >{{ githubuserS.userdetails.name }}</span
+          >
+          <span
+            [ngStyle]="{ color: 'red' }"
+            *ngIf="githubuserS.userdetails.name === null"
+            >Name is not updated</span
+          >
+        </li>
+        <!-- <li
+          class="list-group-item"
+          [ngStyle]="{
+            color: githubuserS.userdetails.name === null ? 'red' : 'green'
+          }"
+        >
+          {{ githubuserS.userdetails.name || "Name is not updated" }}
+        </li> -->
+        <li class="list-group-item" [ngStyle]="{ color: 'red' }">
+          {{ githubuserS.userdetails.email || "Email Id is not Updated" }}
+        </li>
+        <li class="list-group-item">
+          {{ githubuserS.userdetails.followers }}
+        </li>
+        <li class="list-group-item">
+          {{ githubuserS.userdetails.following }}
+        </li>
+        <li class="list-group-item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          asperiores?
+        </li>
+        <li class="list-group-item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          asperiores?
+        </li>
+        <li class="list-group-item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          asperiores?
+        </li>
+        <li class="list-group-item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          asperiores?
+        </li>
+        <li class="list-group-item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          asperiores?
+        </li>
+        <li class="list-group-item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          asperiores?
+        </li>
+        v
+      </ul>
+    </div>
+  </div>
+</div>
