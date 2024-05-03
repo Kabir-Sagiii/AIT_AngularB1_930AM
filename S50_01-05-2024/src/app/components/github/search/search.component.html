@@ -1,0 +1,22 @@
+<div class="container p-3 mt-5 bg-dark">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-white">GITHUB SEARCH</h2>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-8">
+      <input
+        type="text"
+        placeholder="Github user name"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="col-4">
+      <button class="btn btn-outline-success px-5" (click)="getUsersData()">
+        Search
+      </button>
+    </div>
+  </div>
+</div>
