@@ -1,0 +1,17 @@
+<div class="col-4 shadow p-5">
+  <h2>Login Form</h2>
+  <div class="mt-4">
+    <input type="text" placeholder="Email Id" #emailid class="form-control" />
+  </div>
+  <div class="mt-4">
+    <input
+      type="password"
+      placeholder="Password"
+      #password
+      class="form-control"
+    />
+  </div>
+  <button class="btn mt-3 btn-primary" (click)="login(emailid, password)">
+    Login
+  </button>
+</div>
