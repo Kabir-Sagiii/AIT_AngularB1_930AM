@@ -1,0 +1,130 @@
+<div class="d-flex justify-content-evenly mt-5">
+  <div class="w-50 mt-3 shadow p-4">
+    <h2 class="text-center text-success">Template Driven Form</h2>
+    <form (ngSubmit)="getUsersData(mytdform)" #mytdform="ngForm">
+      <div class="my-3">
+        <input
+          class="form-control"
+          type="text"
+          name="username"
+          ngModel
+          placeholder="username"
+          required
+          [ngClass]="{
+            red:
+              mytdform.touched &&
+              mytdform.controls['username'].touched &&
+              mytdform.controls['username'].invalid,
+            green:
+              mytdform.touched &&
+              mytdform.controls['username'].touched &&
+              mytdform.controls['username'].valid
+          }"
+        />
+        <small
+          *ngIf="mytdform.touched && mytdform.controls['username'].invalid"
+          style="color: red"
+          >Enter UserName</small
+        >
+      </div>
+      <div class="my-3">
+        <input
+          class="form-control"
+          name="password"
+          ngModel
+          required
+          type="password"
+          placeholder="password"
+          [ngClass]="{
+            red:
+              mytdform.touched &&
+              mytdform.controls['password'].touched &&
+              mytdform.controls['password'].invalid,
+            green:
+              mytdform.touched &&
+              mytdform.controls['password'].touched &&
+              mytdform.controls['password'].valid
+          }"
+        />
+        <small
+          *ngIf="
+            mytdform.touched &&
+            mytdform.controls['password'].touched &&
+            mytdform.controls['password'].invalid
+          "
+          style="color: red"
+          >Enter Password</small
+        >
+      </div>
+      <div class="my-3">
+        <input
+          class="form-control"
+          name="email"
+          ngModel
+          type="email"
+          placeholder="email"
+        />
+      </div>
+      <div class="my-3 form-check form-check-inline">
+        <input
+          class="form-check-input"
+          value="male"
+          type="radio"
+          name="gender"
+          ngModel
+        />
+        <label class="form-check-label">Male</label>
+      </div>
+      <div class="my-3 form-check form-check-inline">
+        <input
+          class="form-check-input"
+          value="female"
+          type="radio"
+          name="gender"
+          ngModel
+        />
+        <label class="form-check-label">Female</label>
+      </div>
+      <div class="my-3 form-check form-check-inline">
+        <input
+          class="form-check-input"
+          value="other"
+          type="radio"
+          name="gender"
+          ngModel
+        />
+        <label class="form-check-label">Other</label>
+      </div>
+      <div>
+        <input type="submit" class="btn btn-outline-success" />
+        <button
+          class="btn btn-outline-primary mx-3"
+          type="button"
+          (click)="resetDefaultValue(mytdform)"
+        >
+          Reset Default Value
+        </button>
+        <button
+          class="btn btn-outline-secondary mx-3"
+          type="button"
+          (click)="resetOnlyUserNameGender(mytdform)"
+        >
+          Reset Only UserName and Gender
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="p-5 shadow">
+    <h2 class="text-primary">User Information</h2>
+    <dl>
+      <dt>User Name</dt>
+      <dd>{{ username }}</dd>
+      <dt>Password</dt>
+      <dd>{{ password }}</dd>
+      <dt>Email Id</dt>
+      <dd>{{ email }}</dd>
+      <dt>Gender</dt>
+      <dd>{{ gender }}</dd>
+    </dl>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4 m-auto shadow p-4 bg-dark text-center">
+      <h2 class="text-white">Reactive Forms</h2>
+      <form [formGroup]="myreactiveform" (ngSubmit)="getUserDetails()">
+        <div class="my-3">
+          <input
+            formControlName="username"
+            type="text"
+            class="form-control"
+            placeholder="Username"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control"
+            placeholder="Password"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control"
+            placeholder="Email id"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="submit"
+            class="btn btn-outline-primary"
+            placeholder="username"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

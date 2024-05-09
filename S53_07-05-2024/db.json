@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "name": "Jiya Sharma",
+      "city": "Indore",
+      "id": "104"
+    },
+    {
+      "id": "4e89",
+      "name": "Rani",
+      "city": "Banglore"
+    },
+    {
+      "id": "3652",
+      "name": "Vansh",
+      "city": "Hyderabad"
+    },
+    {
+      "id": "426e",
+      "name": "rani",
+      "city": "Hyderabad"
+    }
+  ],
+  "data": {
+    "productName": "Iphone",
+    "price": 120000
+  }
+}

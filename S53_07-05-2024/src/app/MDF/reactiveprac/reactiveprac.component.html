@@ -1,0 +1,108 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4 m-auto shadow p-4 bg-dark">
+      <h2 class="text-white text-center">Reactive Forms</h2>
+      <form [formGroup]="myreactiveform" (ngSubmit)="getUserDetails()">
+        <div class="my-3">
+          <input
+            formControlName="username"
+            type="text"
+            class="form-control"
+            placeholder="Username"
+          />
+          <small
+            *ngIf="
+              myreactiveform.get('username')?.touched &&
+              myreactiveform.get('username')?.hasError('required')
+            "
+            >Name Required</small
+          >
+          <small
+            *ngIf="
+              myreactiveform.get('username')?.touched &&
+              myreactiveform.get('username')?.hasError('minlength')
+            "
+            >minimum 5 charachteres</small
+          >
+        </div>
+        <div class="my-3">
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control"
+            placeholder="Password"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control"
+            placeholder="Email id"
+          />
+        </div>
+        <div formGroupName="address">
+          <div class="my-3">
+            <select class="form-select" formControlName="city">
+              <option>Indore</option>
+              <option>Delhi</option>
+            </select>
+          </div>
+          <div class="my-3">
+            <select class="form-select" formControlName="state">
+              <option>MP</option>
+              <option>Territory</option>
+            </select>
+          </div>
+        </div>
+        <div id="sk" formArrayName="skills">
+          <div *ngFor="let c of skillss; let i = index">
+            <input type="text" [formControlName]="i" />
+            <button (click)="removeC(i)">remove</button>
+          </div>
+          <button type="button" (click)="addC()">add</button>
+
+          <!-- <input type="text" [formControlName]="0" />
+          <input type="text" [formControlName]="1" /> -->
+          <!-- <div
+            class="form-check"
+            *ngFor="
+              let control of myreactiveform.get('skills');
+              let i = index
+            "
+          >
+            <input
+              value="html"
+              type="checkbox"
+              class="form-check-input"
+              formControlName="i"
+            />
+            <label class="text-white form-check-label">HTML</label>
+          </div> -->
+        </div>
+        <div class="my-3 text-center">
+          <input
+            type="submit"
+            class="btn btn-outline-light px-5"
+            placeholder="username"
+          />
+        </div>
+        <div>
+          <input
+            type="button"
+            (click)="resetV()"
+            value="reset"
+            class="btn btn-primary"
+          />
+          <input
+            type="button"
+            (click)="patchV()"
+            value="Update"
+            class="mx-3 btn btn-secondary"
+          />
+        </div>
+        <div></div>
+      </form>
+    </div>
+  </div>
+</div>
