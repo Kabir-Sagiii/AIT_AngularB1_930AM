@@ -1,0 +1,137 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4 m-auto shadow p-4 bg-dark text-center">
+      <h2 class="text-white">Reactive Forms</h2>
+      <form [formGroup]="myreactiveform" (ngSubmit)="getUserDetails()">
+        <div class="my-3">
+          <input
+            formControlName="username"
+            type="text"
+            class="form-control"
+            placeholder="Username"
+          />
+          <span
+            *ngIf="
+              myreactiveform.get('username')?.touched &&
+              myreactiveform.get('username')?.hasError('required')
+            "
+            >username is required</span
+          >
+          <span
+            *ngIf="
+              myreactiveform.get('username')?.touched &&
+              myreactiveform.get('username')?.hasError('minlength')
+            "
+            >Add Minimum 5 Character's</span
+          >
+        </div>
+        <div class="my-3">
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control"
+            placeholder="Password"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control"
+            placeholder="Email id"
+          />
+        </div>
+
+        <div class="my-3" formGroupName="address">
+          <div class="my-3">
+            <select class="form-select" formControlName="city">
+              <option>Select City</option>
+              <option>Indore</option>
+              <option>Pune</option>
+              <option>Hyderabad</option>
+              <option>Banglore</option>
+            </select>
+          </div>
+          <div class="my-3">
+            <select class="form-select" formControlName="state">
+              <option>Select State</option>
+              <option>MP</option>
+              <option>MH</option>
+              <option>TS</option>
+              <option>KA</option>
+            </select>
+          </div>
+        </div>
+
+        <div formArrayName="skills">
+          <div
+            class="my-3 d-flex justify-content-evenly"
+            *ngFor="let control of accessSkills; let i = index"
+          >
+            <input
+              type="text"
+              [formControlName]="i"
+              class="form-control"
+              placeholder="Add Skills"
+            />
+            <button class="btn btn-danger btn-sm" (click)="removeControl(i)">
+              Remove
+            </button>
+          </div>
+        </div>
+        <div class="my-2 text-start">
+          <button
+            type="button"
+            (click)="addSkillControl()"
+            class="btn btn-primary btn-sm"
+          >
+            Add Skills
+          </button>
+        </div>
+
+        <!-- <div formArrayName="skills" class="d-flex justify-content-evenly">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              formControlName="0"
+            />
+            <label class="text-white fw-bold">HTML</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              formControlName="1"
+            />
+            <label class="text-white fw-bold">CSS</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              formControlName="2"
+            />
+            <label class="text-white fw-bold">Javascript</label>
+          </div>
+        </div> -->
+
+        <div class="my-3">
+          <input type="submit" class="btn btn-outline-light mx-2" />
+          <input
+            type="button"
+            value="Reset"
+            (click)="resetAllControls()"
+            class="btn btn-outline-info mx-2"
+          />
+          <input
+            type="button"
+            value="Patch"
+            class="btn btn-outline-secondary mx-2"
+            (click)="patchControlValues()"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

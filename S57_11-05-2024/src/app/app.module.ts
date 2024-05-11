@@ -24,6 +24,8 @@ import { TDFormComponent } from './TDF/tdform/tdform.component';
 import { ReactiveFCComponent } from './MDF/reactive-fc/reactive-fc.component';
 import { ReactivepracComponent } from './MDF/reactiveprac/reactiveprac.component';
 import { ProductComponent } from './components/product/product.component';
+import { ContactUsComponent } from './components/Routing/contact-us/contact-us.component';
+import { PagenotfoundComponent } from './components/Routing/pagenotfound/pagenotfound.component';
 
 
 
@@ -47,6 +49,8 @@ import { ProductComponent } from './components/product/product.component';
     ReactiveFCComponent,
     ReactivepracComponent,
     ProductComponent,
+    ContactUsComponent,
+    PagenotfoundComponent,
    
    
    
