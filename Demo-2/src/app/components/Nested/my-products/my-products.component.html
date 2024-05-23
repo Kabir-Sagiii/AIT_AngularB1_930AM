@@ -1,0 +1,24 @@
+<div class="container shadow mt-5" style="height: 400px">
+  <div class="row mt-5" style="height: 100%">
+    <div
+      style="height: 100%"
+      class="col-3 bg-dark d-flex flex-column align-items-center justify-content-evenly"
+    >
+      <a routerLink="electronics" class="text-white text-decoration-none"
+        >Electronics</a
+      >
+      <a routerLink="jewelery" class="text-white text-decoration-none"
+        >Jewelery</a
+      >
+      <a routerLink="mens" class="text-white text-decoration-none"
+        >Men'sClothing</a
+      >
+      <a routerLink="womens" class="text-white text-decoration-none"
+        >Women'sClothing</a
+      >
+    </div>
+    <div class="col-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

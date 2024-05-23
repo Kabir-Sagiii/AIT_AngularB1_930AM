@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-success">Contact Us</h2>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, asperiores
+      fuga suscipit facere rem repellat nesciunt esse, non enim eius recusandae
+      doloribus ipsa. Praesentium soluta deleniti inventore iure laudantium ad
+      aliquam ea temporibus, expedita dolores molestias possimus minus esse? Ex
+      ipsum quidem molestias ut excepturi autem architecto obcaecati nemo illo.
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col-6">
+      <input
+        type="text"
+        [(ngModel)]="registereduser.username"
+        class="form-control"
+        placeholder="username"
+      />
+    </div>
+    <div class="col-6">
+      <input
+        type="text"
+        [(ngModel)]="registereduser.email"
+        class="form-control"
+        placeholder="emailid"
+      />
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col-12">
+      <textarea
+        [(ngModel)]="registereduser.query"
+        placeholder="Add Query"
+        col="150"
+        class="form-control"
+        rows="7"
+      ></textarea>
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col12">
+      <button (click)="submitQuery()" class="btn btn-outline-primary">
+        Submit
+      </button>
+    </div>
+  </div>
+</div>

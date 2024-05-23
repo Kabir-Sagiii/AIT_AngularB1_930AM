@@ -1,0 +1,40 @@
+.HomeContainer {
+  background-image: url("https://wallpapercave.com/wp/wp1877607.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 88vh;
+  padding: 1px;
+}
+.subHomeContainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subHomeContainer h2 {
+  font-size: 57px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+.subHomeContainer p {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 18px;
+}
+.subHomeContainer button {
+  padding: 10px 50px;
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+  box-shadow: 0 0 1px green;
+  border-radius: 7px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid green;
+  font-weight: bold;
+}

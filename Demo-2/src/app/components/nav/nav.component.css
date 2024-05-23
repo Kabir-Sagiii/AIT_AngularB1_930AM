@@ -1,0 +1,31 @@
+.navContainer {
+  height: 70px;
+  display: flex;
+  box-shadow: 0 0 10px black;
+}
+.title h1 {
+  color: rgb(2, 140, 2);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.links2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.navContainer a {
+  color: green;
+  margin-right: 50px;
+  text-decoration: none;
+}
