@@ -1,0 +1,128 @@
+<!-- <div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Raj Verma</mat-card-title>
+      <mat-card-subtitle>Software Enginner</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <img
+        mat-card-lg-image
+        src="https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique
+        ratione ipsum officiis, quibusdam dolor dolorem voluptatibus. Deleniti,
+        voluptas distinctio?
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button color="primary">ProFessional Details</button>
+      <button mat-button color="warn">Profile Details</button>
+    </mat-card-actions>
+  </mat-card>
+</div> -->
+
+<!-- <div class="container">
+  <mat-tab-group animationDuration="2000" headerPosition="above">
+    <mat-tab label="Basic Information">
+      <div style="width: 250px; margin-top: 30px">
+        <input
+          placeholder="username"
+          type="text"
+          class="form-control"
+          size="40"
+        />
+      </div>
+      <mat-card style="width: 400px">
+        <mat-card-header>
+          <mat-card-title>Raj Verma</mat-card-title>
+          <mat-card-subtitle>Software Enginner</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <img
+            mat-card-lg-image
+            src="https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            similique ratione ipsum officiis, quibusdam dolor dolorem
+            voluptatibus. Deleniti, voluptas distinctio?
+          </p>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-button color="primary">ProFessional Details</button>
+          <button mat-button color="warn">Profile Details</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-tab>
+
+    <mat-tab label="Personal Information">
+      <app-login></app-login>
+    </mat-tab>
+
+    <mat-tab label="Professional Information">
+      <app-home></app-home>
+    </mat-tab>
+  </mat-tab-group>
+</div> -->
+
+<!-- <div class="container">
+  <mat-vertical-stepper linear>
+    <mat-step label="Login" completed="true">
+      <button color="primary" mat-raised-button matStepperNext>
+        <mat-icon>logout</mat-icon>
+        Logout
+      </button>
+      <app-login></app-login>
+    </mat-step>
+    <mat-step label="Products" completed="true">
+      <button mat-button matStepperPrevious>Previous</button>
+      <button mat-button matStepperNext>Next</button>
+      <app-products></app-products>
+    </mat-step>
+    <mat-step label="Home">
+      <button mat-button matStepperPrevious>Previous</button>
+      <app-home></app-home>
+    </mat-step>
+  </mat-vertical-stepper>
+</div> -->
+
+<!-- <div class="container">
+  <button color="accent" mat-raised-button [matMenuTriggerFor]="myMenus">
+    Menus
+  </button>
+
+  <mat-menu #myMenus xPosition="after" yPosition="below">
+    <span mat-menu-item [matMenuTriggerFor]="angularmenu">Angular</span>
+    <span mat-menu-item>React</span>
+    <span mat-menu-item>Option 3</span>
+    <span mat-menu-item>Option 4</span>
+  </mat-menu>
+
+  <mat-menu #angularmenu yPosition="above" xPosition="after">
+    <button mat-menu-item [matMenuTriggerFor]="compsmenu">Components</button>
+    <button mat-menu-item>Directives</button>
+    <button mat-menu-item>TDF</button>
+    <button mat-menu-item>Services</button>
+  </mat-menu>
+
+  <mat-menu #compsmenu yPosition="above" xPosition="after">
+    <button mat-menu-item>Template</button>
+    <button mat-menu-item>Style</button>
+    <button mat-menu-item>Model</button>
+  </mat-menu>
+</div> -->
+
+<div class="container">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="openDialog('3000ms', '3000ms')"
+  >
+    Open Dialog
+  </button>
+</div>

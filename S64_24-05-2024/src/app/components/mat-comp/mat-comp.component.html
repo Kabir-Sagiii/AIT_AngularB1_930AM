@@ -1,0 +1,93 @@
+<!-- <mat-card style="width: 270px">
+  <mat-card-header>
+    <mat-card-title>HTML LANGUAGE</mat-card-title>
+    <img
+      mat-card-sm-image
+      src="https://th.bing.com/th/id/R.da2e546841da40cdcf60061743233500?rik=IeO7Sr%2fkUW54wQ&riu=http%3a%2f%2fwww.venmond.com%2fdemo%2fvendroid%2fimg%2favatar%2fbig.jpg&ehk=JihI5nQ0BOd0W%2bZVhtIWmqwac0NMyRMOV7%2bzryywg%2fg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+    />
+    <mat-card-subtitle>Elements</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <img
+      mat-card-xl-image
+      src="https://th.bing.com/th/id/R.da2e546841da40cdcf60061743233500?rik=IeO7Sr%2fkUW54wQ&riu=http%3a%2f%2fwww.venmond.com%2fdemo%2fvendroid%2fimg%2favatar%2fbig.jpg&ehk=JihI5nQ0BOd0W%2bZVhtIWmqwac0NMyRMOV7%2bzryywg%2fg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+    />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus vitae
+      necessitatibus itaque aliquid sed voluptate suscipit saepe, dolor
+      voluptatum facilis minima accusamus modi, cumque similique quos quam
+      ducimus vel assumenda reiciendis placeat esse maiores ratione. A porro
+      nobis, deserunt sed at totam qui aut mollitia accusamus harum repellat
+      aliquam officia provident beatae, expedita maiores rerum. Aliquid officiis
+      quo eaque dolore praesentium quod reprehenderit. Dolorum exercitationem
+      pariatur eum quos necessitatibus eius! Labore error architecto quo aperiam
+      voluptatum. Laudantium accusantium aliquid quis nisi repellendus, ab,
+      ipsam illo asperiores fuga, praesentium quo maiores odit. Aspernatur
+      molestias autem culpa dolor facere non, repudiandae sit.
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button>Click</button>
+    <button mat-button color="primary">Cancel</button>
+  </mat-card-actions>
+</mat-card> -->
+
+<!-- <mat-icon color="primary" size="30">favoriteborder</mat-icon>
+<mat-icon color="primary" size="30" fontIcon="portrait"></mat-icon> -->
+
+<!-- <mat-vertical-stepper linear headerPosition="top">
+  <mat-step label="Basic Details" completed="true">
+    <input type="text" class="form-control" />
+    <button mat-button matStepperPrevious>Prev</button>
+    <button mat-button matStepperNext>Next</button>
+  </mat-step>
+  <mat-step label="Advance Details">
+    <button mat-button matStepperPrevious>Prev</button>
+    <button mat-button matStepperNext>Next</button>
+  </mat-step>
+  <mat-step label="Professional Details"></mat-step>
+</mat-vertical-stepper>
+
+<mat-tab-group animationDuration="2000" headerPosition="above">
+  <mat-tab label="React">
+    <mat-card style="width: 270px">
+      <mat-card-header>
+        <img
+          src="https://th.bing.com/th/id/R.da2e546841da40cdcf60061743233500?rik=IeO7Sr%2fkUW54wQ&riu=http%3a%2f%2fwww.venmond.com%2fdemo%2fvendroid%2fimg%2favatar%2fbig.jpg&ehk=JihI5nQ0BOd0W%2bZVhtIWmqwac0NMyRMOV7%2bzryywg%2fg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+          mat-card-xl-image
+        />
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          impedit vero libero vitae, est at natus eos aspernatur fugiat
+          inventore veritatis reprehenderit harum optio culpa quae ullam maxime?
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button>Profile Details</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Angular"></mat-tab>
+
+  <mat-tab label="Vue JS"></mat-tab>
+</mat-tab-group> -->
+
+<button mat-icon-button [mat-menu-trigger-for]="mymenu" style="margin: 100px">
+  <mat-icon>more_vert</mat-icon>
+</button>
+
+<mat-menu #mymenu xPosition="before">
+  <button mat-menu-item [mat-menu-trigger-for]="nested1">React</button>
+  <button mat-menu-item>Angular</button>
+  <button mat-menu-item>Vue JS</button>
+</mat-menu>
+
+<mat-menu #nested1 yPosition="below" xPosition="after">
+  <button mat-menu-item>Elements</button>
+  <button mat-menu-item>state</button>
+  <button mat-menu-item>props</button>
+</mat-menu>

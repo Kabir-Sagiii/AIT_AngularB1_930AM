@@ -1,0 +1,73 @@
+<div class="p-5">
+  <h2 class="text-primary">Products Information</h2>
+  <p class="lead">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus et sunt
+    perspiciatis obcaecati vero minus sed cumque dolore ducimus, tempore earum!
+    Unde sint, ratione necessitatibus porro nostrum atque dolore dolorum
+    voluptates neque nulla facilis quisquam pariatur laboriosam enim numquam,
+    vitae voluptas rem inventore voluptatum autem? Reiciendis sint fugit,
+    voluptates est amet eaque architecto, soluta minima eum ipsum sequi repellat
+    maiores incidunt, deleniti neque mollitia suscipit eveniet quam sed tempore!
+    Fugiat excepturi voluptates itaque. At est dolorem beatae voluptate quia
+    expedita maiores laborum odio libero ex velit molestiae, unde, tempore
+    aliquid explicabo id exercitationem, ad harum neque quod! In, quo numquam!
+  </p>
+  <!-- <button class="btn btn-primary" (click)="getProducts()">Get Products</button> -->
+
+  <div class="container mt-5">
+    <div class="row my-3">
+      <div class="col-4">
+        <select class="form-select">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Jewelery</option>
+          <option>Men'sClothing</option>
+          <option>Women'sClothing</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <select
+          routerLink="/products"
+          [queryParams]="{ sort: sort.value }"
+          class="form-select"
+          #sort
+          (change)="sortProducts(sort)"
+        >
+          <option>asc</option>
+          <option>desc</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <select class="form-select">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Jewelery</option>
+          <option>Men'sClothing</option>
+          <option>Women'sClothing</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3" *ngFor="let product of products">
+        <div class="card text-center">
+          <div class="card-header">
+            <img [src]="product.image" width="100%" height="200" />
+          </div>
+          <div class="card-body">
+            <p class="lead">
+              <b>{{ product.id }}</b>
+            </p>
+            <h5>{{ product.title }}</h5>
+            <p class="lead">${{ product.price }}</p>
+            <button
+              class="btn btn-outline-success"
+              [routerLink]="'/productdetails/' + product.id"
+            >
+              Product Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

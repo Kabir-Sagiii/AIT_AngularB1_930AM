@@ -1,0 +1,24 @@
+<div class="navContainer">
+  <div class="title">
+    <h1>My-Ekart-App</h1>
+  </div>
+  <div class="links">
+    <a routerLink="/">Home</a>
+
+    <a routerLink="/products">Products</a>
+    <a routerLink="/cart">CartDetials</a>
+    <a routerLink="/altproducts">Alt-Products</a>
+
+    <a routerLink="/contactus">ContactUs</a>
+
+    <a *ngIf="!auth.isLoggedIn" routerLink="/login">Login</a>
+
+    <button
+      *ngIf="auth.isLoggedIn"
+      class="btn btn-outline-danger"
+      (click)="logoutUser()"
+    >
+      Logout
+    </button>
+  </div>
+</div>

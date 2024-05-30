@@ -1,0 +1,59 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-success">Contact Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        maiores sed esse reprehenderit quia voluptates libero, est error
+        deleniti ipsam blanditiis ut eveniet quidem illo saepe commodi? Amet
+        possimus ad unde provident illo est. Perspiciatis delectus repudiandae
+        assumenda doloribus blanditiis. Modi quasi quaerat ipsa adipisci,
+        temporibus eum corrupti delectus omnis recusandae natus corporis tempore
+        expedita accusamus odio assumenda repellat atque qui voluptatem
+        similique velit quia maxime! Impedit tempore, ipsa rem fugit saepe porro
+        necessitatibus quo tempora, aut magnam, est optio. Vitae tempore
+        inventore, at id veniam odio eveniet iste voluptatum, quibusdam neque
+        dolor? Ut repellat veniam, velit voluptas, dolorem nulla illo ipsa qui
+        iure vero, nam repellendus labore? Tempora, vero. Reprehenderit, quaerat
+        molestiae! Quae recusandae possimus sint perspiciatis aperiam ipsum!
+        Doloribus est, magni atque assumenda molestias rem eum. Sed doloremque
+        similique deserunt aperiam dolorum praesentium quae aliquam vero facilis
+        et, adipisci, commodi saepe ea maiores autem nemo, repudiandae atque
+        voluptatem?
+      </p>
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col-6">
+      <input
+        [(ngModel)]="contactusservice.username"
+        class="form-control"
+        type="text"
+        placeholder="username"
+      />
+    </div>
+    <div class="col-6">
+      <input
+        [(ngModel)]="contactusservice.email"
+        class="form-control"
+        type="text"
+        placeholder="email id"
+      />
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col-12">
+      <textarea
+        [(ngModel)]="contactusservice.query"
+        cols="150"
+        rows="5"
+        class="form-control"
+      ></textarea>
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col-4">
+      <button (click)="submitQuery()" class="btn btn-success">Submit</button>
+    </div>
+  </div>
+</div>
